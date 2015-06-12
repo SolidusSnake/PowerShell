@@ -1,0 +1,1 @@
+Import-Clixml c:\Temp\<0827investigation-file>.xml | select timecreated, machinename, @{name="username";expression={$_.message.split("`n")[12].split("`t")[3]}},@{name="sourceWorkstation";expression={$_.message.split("`n")[25].split("`t")[2]}},@{name="sourceIP";expression={$_.message.split("`n")[26].split("`t")[2]}} | export-csv findings.csv -NoTypeInformation
