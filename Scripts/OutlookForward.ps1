@@ -14,6 +14,8 @@ foreach ($item in ($reports.Items))
     $mail.To = "user@email.com"
     $mail.Subject = "$subject Rebooted"
     $mail.Body = "Rebooted"
-    $mail.Save()
+    $mail.Save() ##saves to drafts
+    $mail.Send()
+    $mail.Reply()
     
 }
