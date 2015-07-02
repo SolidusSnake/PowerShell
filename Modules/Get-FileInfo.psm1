@@ -47,12 +47,6 @@ Function Get-FileInfo
 		-----------
 		Gets information on all instances of "pdm.dll" for a list of computers 
 		and exports that list as a .csv documents.
-		
-	.NOTES
-		NAME......:  Get-FileInfo.psm1
-		AUTHOR....:  Micah Battin (micah.o.battin@gmail.com)
-		AUTHOR....:  Wesley Tomlinson (tomlinson.wesley@gmail.com)
-		DATE......:  10 MAY 2013
 	#>
 
 	[CmdletBinding(SupportsShouldProcess=$true)]

@@ -31,11 +31,6 @@ Function Get-PasswordAge
 		-----------
 		Displays a list of Users that have expired passwords only. Exports that 
 		list to the global variable $ExpiredUserPassword.
-	
-	.NOTES
-		NAME......:  Get-PasswordAge.psm1
-		AUTHOR....:  Micah Battin (micah.o.battin@gmail.com)
-		DATE......:  10 MAY 2013
 	#>
 
 	[CmdletBinding(SupportsShouldProcess=$true)]

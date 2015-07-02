@@ -37,12 +37,6 @@ Function Get-LastLogon
         Description
         -----------
         Displays 'dormant' accounts on computer 'server01'.
-        
-    .NOTES
-        NAME......:  Get-LastLogon.psm1
-        AUTHOR....:  Micah Battin (micah.o.battin@gmail.com)
-        AUTHOR....:  Wesley Tomlinson (tomlinson.wesley@gmail.com)
-        DATE......:  05 JUNE 2013
     #>
 
     [CmdletBinding(SupportsShouldProcess=$true)]

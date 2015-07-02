@@ -27,11 +27,6 @@ Function Remove-LocalUserAccount
         Description
         -----------
         Removes the user 'user01' from all computers listed in 'servers.txt'.
-
-    .NOTES
-        NAME......:  Remove-LocalUserAccount.psm1
-        AUTHOR....:  Wesley Tomlinson (tomlinson.wesley@gmail.com)
-        DATE......:  22 OCTOBER 2013
     #>
 
 

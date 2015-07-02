@@ -598,31 +598,31 @@ function Get-Connections {
     )
     IF ($Computer -like "*site01*")
 {
-    Write-Host "Testing OKC DNS connection..."
+    Write-Host "Testing Site01 DNS connection..."
    $connections = Invoke-Command -ComputerName $Computer -ScriptBlock {Test-Connection 1.1.1.1 -Count 2} | Select-Object PSComputerName,IPV4Address,ResponseTime 
    $connections = Invoke-Command -ComputerName $Computer -ScriptBlock {Test-Connection 1.1.1.2 -Count 2} | Select-Object PSComputerName,IPV4Address,ResponseTime 
 }
 
-# St. Louis
+# Site02
 Elseif ($Computer -like "*site02*")
 {
-    Write-Host "Testing SLS DNS connection..."
+    Write-Host "Testing Site02 DNS connection..."
     $connections =Invoke-Command -ComputerName $Computer -ScriptBlock {Test-Connection 1.1.2.1 -Count 2} | Select-Object PSComputerName,IPV4Address,ResponseTime 
     $connections = Invoke-Command -ComputerName $Computer -ScriptBlock {Test-Connection 1.1.2.2 -Count 2} | Select-Object PSComputerName,IPV4Address,ResponseTime 
 }
 
-# Columbus
+# Site03
 Elseif ($Computer -like "*site03*")
 {
-    Write-Host "Testing COL DNS connection..."
+    Write-Host "Testing Site03 DNS connection..."
     $connections = Invoke-Command -ComputerName $Computer -ScriptBlock {Test-Connection 1.1.3.1 -Count 2} | Select-Object PSComputerName,IPV4Address,ResponseTime 
     $connections = Invoke-Command -ComputerName $Computer -ScriptBlock {Test-Connection 1.1.3.2 -Count 2} | Select-Object PSComputerName,IPV4Address,ResponseTime 
 }
 
-# San Antonio
+# Site04
 Elseif ($Computer -like "*site04*")
 {
-    Write-Host "Testing SATX DNS connection..."
+    Write-Host "Testing Site04 DNS connection..."
     $connections = Invoke-Command -ComputerName $Computer -ScriptBlock {Test-Connection 1.1.4.1 -Count 2} | Select-Object PSComputerName,IPV4Address,ResponseTime 
     $connections = Invoke-Command -ComputerName $Computer -ScriptBlock {Test-Connection 1.1.4.2 -Count 2} | Select-Object PSComputerName,IPV4Address,ResponseTime 
 }

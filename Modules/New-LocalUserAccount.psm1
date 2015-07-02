@@ -43,12 +43,6 @@ Function New-LocalUserAccount
 		-----------
 		Creates a new user called 'Test.Account' on the single server, 'server01', sets the user's full name, 
 		description, password, and adds the user to the Remote Desktop Users, Administrators, and NEW_GRP security groups.
-		
-	.NOTES
-		NAME......:  New-LocalUserAccount.psm1
-		AUTHOR....:  Micah Battin (micah.o.battin@gmail.com)
-		AUTHOR....:  Wesley Tomlinson (tomlinson.wesley@gmail.com)
-		DATE......:  05 JUNE 2013
 	#>
 
 	[CmdletBinding(SupportsShouldProcess=$true)]

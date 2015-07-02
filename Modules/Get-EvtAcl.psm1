@@ -41,12 +41,6 @@ Function Get-EvtAcl
 		-----------
 		Displays ACLs for C:\windows\system32\winevt\logs\Security.evtx
 		for all servers listed in ".\servers.txt".
-		
-	.NOTES
-		NAME......:  Get-EvtAcl.psm1
-		AUTHOR....:  Micah Battin (micah.o.battin@gmail.com)
-		AUTHOR....:  Wesley Tomlinson (tomlinson.wesley@gmail.com)
-		DATE......:  05 JUNE 2013
 	#>
 	
 	[CmdletBinding(SupportsShouldProcess=$true)]

@@ -1418,7 +1418,7 @@ $dnsOutput =
 ************************************************************"
 
 Write-Progress -Activity $Activity -Status "Checking OOB DNS connections [STEP 2/10]" -PercentComplete (2/10*100)
-# Oklahoma City
+# Site01
 If ($server -like "*site01*")
 {
     $dnsOutput | Out-File $filepath -Append
@@ -1426,7 +1426,7 @@ If ($server -like "*site01*")
     Test-Connection x.x.x.2 -Count 2 | Select-Object PSComputerName,IPV4Address,ResponseTime | Out-File $filepath -Append
 }
 
-# St. Louis
+# Site02
 Elseif ($server -like "*site02*")
 {
     $dnsOutput | Out-File $filepath -Append
@@ -1434,7 +1434,7 @@ Elseif ($server -like "*site02*")
     Test-Connection x.x.y.2 -Count 2 | Select-Object PSComputerName,IPV4Address,ResponseTime | Out-File $filepath -Append
 }
 
-# Columbus
+# Site03
 Elseif ($server -like "*site03*")
 {
     $dnsOutput | Out-File $filepath -Append
@@ -1442,7 +1442,7 @@ Elseif ($server -like "*site03*")
     Test-Connection x.x.z.2 -Count 2 | Select-Object PSComputerName,IPV4Address,ResponseTime | Out-File $filepath -Append
 }
 
-# San Antonio
+# Site04
 Elseif ($server -like "*site04*")
 {
     $dnsOutput | Out-File $filepath -Append

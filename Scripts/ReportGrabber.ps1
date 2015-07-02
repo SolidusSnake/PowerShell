@@ -19,7 +19,7 @@ $junk.items | foreach {
 	$_.attachments | foreach {
 		#Write-Host $_.filename
 		$file = $_.filename
-		If ($file.Contains("Report001")) {
+		If ($file.Contains("PART OF FILE NAME")) {
 			$_.saveasfile((Join-Path $filepath $_.filename))
 		}
 	}

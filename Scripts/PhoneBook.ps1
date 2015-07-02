@@ -113,7 +113,7 @@ function Call-PhoneBook_psf {
 	#region Generated Form Objects
 	#----------------------------------------------
 	[System.Windows.Forms.Application]::EnableVisualStyles()
-	$formDISAPhoneBook = New-Object 'System.Windows.Forms.Form'
+	$formWORKPhoneBook = New-Object 'System.Windows.Forms.Form'
 	$labelFormWillCloseInXMinu = New-Object 'System.Windows.Forms.Label'
 	$progressbar1 = New-Object 'System.Windows.Forms.ProgressBar'
 	$labelCreatedByOPK61WINDIS = New-Object 'System.Windows.Forms.Label'
@@ -156,7 +156,7 @@ function Call-PhoneBook_psf {
 	
 	
 	
-	$formDISAPhoneBook_Load={
+	$formWORKPhoneBook_Load={
 		#TODO: Initialize Form Controls here
 		
 	}
@@ -295,7 +295,7 @@ function Call-PhoneBook_psf {
 #        $Outlook = New-Object -comObject Outlook.Application
 #        $body = 'Please open a ticket to have my phone number updated in ITSM to:  '
 #        $mail = $Outlook.CreateItem(0)
-#        $mail.To = "disa.tinker.eis.mbx.okc-service-desk@mail.mil"
+#        $mail.To = "WORK.tinker.eis.mbx.okc-service-desk@mail.mil"
 #        #$mail.CC = "user@mail.mil"
 #        $mail.Subject = "Phone Book Update"
 #        #$mail.Attachments.Add(pathtoattachment)
@@ -373,13 +373,13 @@ function Call-PhoneBook_psf {
 		
 		if ($progressbar1.Value -eq $progressbar1.Maximum)
 		{
-			$formDISAPhoneBook.Close()
+			$formWORKPhoneBook.Close()
 		}
 	}
 	
 	$timer1_Exit={
 		#TODO: Close form once timer expires
-		$formDISAPhoneBook.Close()
+		$formWORKPhoneBook.Close()
 	}
 	
 	
@@ -391,7 +391,7 @@ function Call-PhoneBook_psf {
 	$Form_StateCorrection_Load=
 	{
 		#Correct the initial state of the form to prevent the .Net maximized form issue
-		$formDISAPhoneBook.WindowState = $InitialFormWindowState
+		$formWORKPhoneBook.WindowState = $InitialFormWindowState
 	}
 	
 	$Form_Cleanup_FormClosed=
@@ -404,9 +404,9 @@ function Call-PhoneBook_psf {
 			$buttonViewPhoto.remove_Click($buttonViewPhoto_Click)
 			$buttonUpdatePhoneNumber.remove_Click($buttonUpdatePhoneNumber_Click)
 			$combobox1.remove_SelectedIndexChanged($combobox1_SelectedIndexChanged)
-			$formDISAPhoneBook.remove_Load($formDISAPhoneBook_Load)
-			$formDISAPhoneBook.remove_Load($Form_StateCorrection_Load)
-			$formDISAPhoneBook.remove_FormClosed($Form_Cleanup_FormClosed)
+			$formWORKPhoneBook.remove_Load($formWORKPhoneBook_Load)
+			$formWORKPhoneBook.remove_Load($Form_StateCorrection_Load)
+			$formWORKPhoneBook.remove_FormClosed($Form_Cleanup_FormClosed)
 		}
 		catch [Exception]
 		{ }
@@ -416,22 +416,22 @@ function Call-PhoneBook_psf {
 	#----------------------------------------------
 	#region Generated Form Code
 	#----------------------------------------------
-	$formDISAPhoneBook.SuspendLayout()
+	$formWORKPhoneBook.SuspendLayout()
 	$groupbox2.SuspendLayout()
 	$groupbox1.SuspendLayout()
 	#
-	# formDISAPhoneBook
+	# formWORKPhoneBook
 	#
-	$formDISAPhoneBook.Controls.Add($labelFormWillCloseInXMinu)
-	$formDISAPhoneBook.Controls.Add($progressbar1)
-	$formDISAPhoneBook.Controls.Add($labelCreatedByOPK61WINDIS)
-	$formDISAPhoneBook.Controls.Add($picturebox1)
-	$formDISAPhoneBook.Controls.Add($groupbox2)
-	$formDISAPhoneBook.Controls.Add($groupbox1)
-	$formDISAPhoneBook.ClientSize = '417, 492'
-    $formDISAPhoneBook.BackColor = '#C0C0C0'
+	$formWORKPhoneBook.Controls.Add($labelFormWillCloseInXMinu)
+	$formWORKPhoneBook.Controls.Add($progressbar1)
+	$formWORKPhoneBook.Controls.Add($labelCreatedByOPK61WINDIS)
+	$formWORKPhoneBook.Controls.Add($picturebox1)
+	$formWORKPhoneBook.Controls.Add($groupbox2)
+	$formWORKPhoneBook.Controls.Add($groupbox1)
+	$formWORKPhoneBook.ClientSize = '417, 492'
+    $formWORKPhoneBook.BackColor = '#C0C0C0'
 	#region Binary Data
-	$formDISAPhoneBook.Icon = [System.Convert]::FromBase64String('
+	$formWORKPhoneBook.Icon = [System.Convert]::FromBase64String('
 AAABAAEAAAAAAAEAIAAtTQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAA
 TPRJREFUeNrtvVmMnNeZ3/0/531rX7qquqv3lc3mvouLKEqiNstbbI9nHMcZJYE9wAwwNwFyFeRm
 5gsCzAC5MhBkgEyAscewAiGTsWdiK7Fly7JsUVxEiqQoshd2sxf2vlV3VXft7znfxdNvLV1vVVcX
@@ -780,13 +780,13 @@ kkKheFJEIsDcnLoEVCjqGWUAFIo6RhkAhaKOUQZAoahjlAFQKOoYZQAUijpGGQCFoo5RBkChqGOU
 AVAo6hhlABSKOkYZAIWijlEGQKGoY5QBUCjqGGUAFIo6RhkAhaKOUQZAoahj2GGfTz4bDKLT5Xra
 WhQKxRNiOpHAlUgEejSbxUQ8jlg2+7Q1KRSKJ8RKOo1oNov/H+nVmOkFt2QpAAAAAElFTkSuQmCC')
 	#endregion
-	$formDISAPhoneBook.MaximizeBox = $False
-	$formDISAPhoneBook.MinimizeBox = $False
-    $formDISAPhoneBook.AutoSizeMode = "GrowAndShrink"
-    $formDISAPhoneBook.SizeGripStyle = "Hide"
-	$formDISAPhoneBook.Name = "formDISAPhoneBook"
-	$formDISAPhoneBook.Text = "DISA Phone Book"
-	$formDISAPhoneBook.add_Load($formDISAPhoneBook_Load)
+	$formWORKPhoneBook.MaximizeBox = $False
+	$formWORKPhoneBook.MinimizeBox = $False
+    $formWORKPhoneBook.AutoSizeMode = "GrowAndShrink"
+    $formWORKPhoneBook.SizeGripStyle = "Hide"
+	$formWORKPhoneBook.Name = "formWORKPhoneBook"
+	$formWORKPhoneBook.Text = "WORK Phone Book"
+	$formWORKPhoneBook.add_Load($formWORKPhoneBook_Load)
 	#
 	# labelFormWillCloseInXMinu
 	#
@@ -816,7 +816,7 @@ WhQKxRNiOpHAlUgEejSbxUQ8jlg2+7Q1KRSKJ8RKOo1oNov/H+nVmOkFt2QpAAAAAElFTkSuQmCC')
 	$labelCreatedByOPK61WINDIS.Size = '204, 125'
 	$labelCreatedByOPK61WINDIS.TabIndex = 3
 	$labelCreatedByOPK61WINDIS.Text = "Created by: 
-OPK61 / WIN-DISA"
+OPK61 / WIN-WORK"
 	$labelCreatedByOPK61WINDIS.add_Click($labelCreatedByOPK61WINDIS_Click)
 	#
 	# picturebox1
@@ -2051,7 +2051,7 @@ AUUUUAFFFFAH/9k=')
 	$combobox1.add_SelectedIndexChanged($combobox1_SelectedIndexChanged)
 	$groupbox1.ResumeLayout($false)
 	$groupbox2.ResumeLayout($false)
-	$formDISAPhoneBook.ResumeLayout($false)
+	$formWORKPhoneBook.ResumeLayout($false)
 	#endregion Generated Form Code
 
 	#----------------------------------------------
@@ -2060,15 +2060,15 @@ AUUUUAFFFFAH/9k=')
 	$timer1.add_Tick($timer1_OnTick)
 
 	#Save the initial state of the form
-	$InitialFormWindowState = $formDISAPhoneBook.WindowState
+	$InitialFormWindowState = $formWORKPhoneBook.WindowState
 	#Init the OnLoad event to correct the initial state of the form
-	$formDISAPhoneBook.add_Load($Form_StateCorrection_Load)
+	$formWORKPhoneBook.add_Load($Form_StateCorrection_Load)
 	#Clean up the control events
-	$formDISAPhoneBook.add_FormClosed($Form_Cleanup_FormClosed)
+	$formWORKPhoneBook.add_FormClosed($Form_Cleanup_FormClosed)
 	#Script block to execute when the timer interval expires
 	#$timer1.add_Tick($timer1_OnTick)
 	#Show the Form
-	return $formDISAPhoneBook.ShowDialog()
+	return $formWORKPhoneBook.ShowDialog()
 
 } #End Function
 

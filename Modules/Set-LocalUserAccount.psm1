@@ -79,12 +79,6 @@ Function Set-LocalUserAccount {
 		-----------
 		Uses a list of computers from the pipeline to unlock the user account "xadministrator" on 
 		multiple computers.
-		
-	.NOTES
-		NAME......:  Set-LocalUserAccount.psm1
-		AUTHOR....:  Micah Battin (micah.o.battin@gmail.com)
-		AUTHOR....:  Wesley Tomlinson (tomlinson.wesley@gmail.com)
-		DATE......:  05 JUNE 2013
 	#>
 
 	[CmdletBinding()]
