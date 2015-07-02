@@ -16,6 +16,6 @@ foreach ($item in ($reports.Items))
     $mail.Body = "Rebooted"
     $mail.Save() ##saves to drafts
     $mail.Send()
-    $mail.Reply()
+    #$mail.Reply()
     
 }
