@@ -1,3 +1,5 @@
+# Retrieves basic information from HP blade enclosures and servers
+
 Function Get-BladeInfo
 {
     [CmdletBinding(SupportsShouldProcess=$true)]
