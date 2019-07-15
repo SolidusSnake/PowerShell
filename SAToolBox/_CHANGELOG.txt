@@ -1,0 +1,20 @@
+ _______  _______    _______  _______  _______  ___      _______ 
+|       ||   _   |  |       ||       ||       ||   |    |       |
+|  _____||  |_|  |  |_     _||   _   ||   _   ||   |    |  _____|
+| |_____ |       |    |   |  |  | |  ||  | |  ||   |    | |_____ 
+|_____  ||       |    |   |  |  |_|  ||  |_|  ||   |___ |_____  |
+ _____| ||   _   |    |   |  |       ||       ||       | _____| |
+|_______||__| |__|    |___|  |_______||_______||_______||_______|
+		System Administrator Toolbox v0.1
+
+================================================================================
+
+11/30/2018	Fixed bug in PSTelnet (script not returning results) (JF)
+11/27/2018	Added C: drive cleaning script that was written by Jeff Bryant. (RK)
+11/23/2018	Modified Eventlog menu with oldest event times and added reboot event searcher (JF)
+11/20/2018	Added 'Password Generator' module (RK)
+11/13/2018	Added account logon list to EventLog scripts (JF)
+11/8/2018	Added _CHANGELOG.txt (JF)
+11/7/2018	Updated McAfee info module as well as added 'collect and send' module (RK)
+11/6/2018	Requires PS 2.0 and RunAsAdmin (JF)
+10/25/2018	Initial version (JF)
